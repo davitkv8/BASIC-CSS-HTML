@@ -1,0 +1,297 @@
+body, html {
+    margin: 0;
+    padding-left: 120px;
+    background-color: #030303;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 1px rgba(180, 180, 180, 1);
+}
+
+.svg {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    width: 135px;
+    margin: 10px 0px 20px 12px;
+}
+
+.profile-pic {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.menu-flex {
+    display: flex;
+    margin-left: 13px;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.menu-item-flex {
+    display: flex;
+    width: 80%;
+    padding: 12px;
+    align-items: center;
+    border-radius: 10px;
+    gap: 12px;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px;
+    width: 700px;
+}
+
+.stories-flex {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-img {
+    border: solid 2.5px #f0226a;
+}
+
+.user-img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: small;
+    font-weight: 100;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 450px;
+    justify-content: center;
+}
+
+.post-info {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 50px 400px;
+    justify-content: center;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-author-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post-img {
+    width: 100%;
+    box-shadow: 0 0 2px rgba(180, 180, 180, 1);
+}
+
+.author {
+    font-size: 16px;
+}
+
+.time, .location {
+    font-size: 15px;
+}
+
+.post-stats {
+    margin-top: 15px;
+}
+
+.post-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    gap: 15px;
+}
+
+.likes {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    box-shadow: 0 2px 1px -2px rgba(180, 180, 180, 1);
+    padding-bottom: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.comment-author {
+    font-size: 16px;
+}
+
+.comment-txt {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.comment-option {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.view-all {
+    color: #A8A8A8;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.comment-input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.footer {
+    display: inline-block;
+    vertical-align: top;
+    padding: 35px 0 0 25px;
+    width: 240px;
+}
+
+.current-user, .suggestion {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-user-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.current-user-username {
+    font-size: 10px;
+}
+
+.current-user-fullname {
+    font-size: 10px;
+    font-weight: 100;
+    color: #A8A8A8;
+}
+
+.switch, .follow {
+    font-size: 10px;
+    color: #0096F6;
+}
+
+.suggest-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.suggestion {
+    margin-top: 10px;
+}
+
+.suggest-text {
+    color: #A8A8A8;
+    font-size: 14px;
+}
+
+.see-all {
+    font-size: 10px;
+}
+
+.menu-item-flex:hover {
+    background-color: #4d4c4c;
+    transition: background-color 0.25s;
+}
+
+.menu-item-flex:hover, .story:hover, .thumbnail, .svg {
+    cursor: pointer;
+}
+
+.follow:hover, .switch:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 0.15s;
+}
+
+.see-all:hover {
+    cursor: pointer;
+    color: #A8A8A8;
+    transition: color 0.15s;
+}
+
+.link {
+    display: inline-block;
+    width: max-content;
+    font-size: 10px;
+    font-weight: 100;
+    color: #A8A8A8;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cc {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #A8A8A8;
+}
