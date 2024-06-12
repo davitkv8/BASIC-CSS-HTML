@@ -1,0 +1,45 @@
+.menu {
+    display: flex;
+    background-color: #232f3e;
+    height: 39px;
+    gap: 1px;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.menu > * {
+    padding: 8px 9px 8px 9px;
+}
+
+.hamburger-menu {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+.hamburger-png {
+    width: 45px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.all {
+    position: absolute;
+    font-size: 13px;
+    right: 2px;
+    pointer-events: none;
+    border: none;
+}
+
+.menu p, .hamburger-menu {
+    border: solid 1px #232f3e;
+}
+
+.menu p:hover, .hamburger-menu:hover {
+    border: solid 1px white;
+    cursor: pointer;
+}
