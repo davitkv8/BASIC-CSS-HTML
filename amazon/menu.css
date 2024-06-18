@@ -19,6 +19,7 @@
     font-weight: bold;
     color: white;
     align-items: center;
+    justify-content: center;
 }
 
 .hamburger-png {
